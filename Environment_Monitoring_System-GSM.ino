@@ -25,7 +25,7 @@ void setup() {
   updateSerial();
   mySerial.println("AT+CMGF=1"); // Configuring TEXT mode
   updateSerial();
-  mySerial.println("AT+CMGS=\"+916382954917\"");//change ZZ with country code and xxxxxxxxxxx with phone number to sms
+  mySerial.println("AT+CMGS=\"+91 phn number\"");//change ZZ with country code and xxxxxxxxxxx with phone number to sms
   updateSerial();
   mySerial.print("Setup Completed!! Ready To Use."); //text content
   updateSerial();
@@ -137,7 +137,7 @@ lcd.setCursor(0,1);
 lcd.print("Sending SMS");
 mySerial.println("AT+CMGF=1"); // Configuring TEXT mode
 updateSerial();
-mySerial.println("AT+CMGS=\"+916382954917\"");//change ZZ with country code and xxxxxxxxxxx with phone number to sms
+mySerial.println("AT+CMGS=\"+91 phn number\"");//change ZZ with country code and xxxxxxxxxxx with phone number to sms
 updateSerial();
 DHT.read11(dht_apin);
 String Output="The Humidity percentage is "+String(int(DHT.humidity))+" %"+"\nThe Temperature is "+String(int(DHT.temperature))+" c";
@@ -178,7 +178,7 @@ lcd.print("Open Windows");
 lcd.clear();
 mySerial.println("AT+CMGF=1"); // Configuring TEXT mode
 updateSerial();
-mySerial.println("AT+CMGS=\"+916382954917\"");//change ZZ with country code and xxxxxxxxxxx with phone number to sms
+mySerial.println("AT+CMGS=\"+91 phn number\"");//change ZZ with country code and xxxxxxxxxxx with phone number to sms
 updateSerial();
 mySerial.print("Smoke Level is Above The Limit."); //text content
 updateSerial();
@@ -205,7 +205,7 @@ delay(5000);
 lcd.clear();
 mySerial.println("AT+CMGF=1"); // Configuring TEXT mode
 updateSerial();
-mySerial.println("AT+CMGS=\"+916382954917\"");//change ZZ with country code and xxxxxxxxxxx with phone number to sms
+mySerial.println("AT+CMGS=\"+91 phn number\"");//change ZZ with country code and xxxxxxxxxxx with phone number to sms
 updateSerial();
 mySerial.print("Temperature level is Too High"); //text content
 updateSerial();
